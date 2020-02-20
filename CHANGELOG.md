@@ -1,3 +1,2 @@
-## [0.0.1] - TODO: Add release date.
-
-* TODO: Describe initial release.
+## [0.0.1] - First Release
+It's included extensions for Theme & TextStyle.
