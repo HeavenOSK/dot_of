@@ -1,0 +1,15 @@
+name: theme_extensions
+description: A extensions to use theme data in Flutter World.
+version: 0.0.1
+author: Ryunosukeheaven Watanabe <heavenosk@gmail.com>
+homepage: https://github.com/HeavenOSK
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
