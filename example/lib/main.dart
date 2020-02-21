@@ -16,45 +16,39 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   const MyHomePage({Key key}) : super(key: key);
 
+  static const routeName = 'kkk';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            InkWell(
-              onTap: () {
-                context.navigator.push(
-                  MaterialPageRoute(builder: (_) => MyHomePage()),
-                );
-              },
-              child: Container(
-                height: context.mediaQuery.size.height * 0.15,
-                width: context.mediaQuery.size.width * 0.3,
-                color: context.theme.accentColor,
-              ),
-            ),
+        child: const _Button(),
+      ),
+    );
+  }
+}
 
-            /// with extension.
-            Text(
-              'Everything is Widget',
-              style: context.theme.textTheme.body1.bold
-                  .withSize(30)
-                  .withColor(Colors.blue),
-            ),
+class _Button extends StatelessWidget {
+  const _Button({Key key}) : super(key: key);
 
-            /// without this extension
-            Text(
-              'Everything is Widget',
-              style: Theme.of(context).textTheme.body1.copyWith(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 30,
-                    color: Colors.blue,
-                  ),
-            ),
-          ],
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: () => context.navigator.pushNamed(MyHomePage.routeName),
+      child: Container(
+        height: context.mediaQuery.size.height * 0.4,
+        width: context.mediaQuery.size.width * 0.5,
+        color: context.theme.accentColor,
+        alignment: Alignment.topLeft,
+        padding: EdgeInsets.only(
+          top: context.mediaQuery.size.height * 0.08,
+        ),
+        child: Text(
+          'Everything is Widget',
+          style: context.theme.textTheme.body1.bold
+              .withSize(30)
+              .withColor(Colors.white),
         ),
       ),
     );
