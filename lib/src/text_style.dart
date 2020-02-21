@@ -16,6 +16,8 @@ import 'package:flutter/material.dart';
 extension TextStyleCopying on TextStyle {
   TextStyle get bold => this.copyWith(fontWeight: FontWeight.bold);
 
+  TextStyle get italic => this.copyWith(fontStyle: FontStyle.italic);
+
   TextStyle withInherit(bool inherit) => this.copyWith(inherit: inherit);
 
   TextStyle withColor(Color color) => this.copyWith(color: color);

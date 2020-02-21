@@ -1,5 +1,5 @@
 # dot_of
-A package of extensions to easily use theme data in Flutter World. 
+A bundle of extensions to get something from BuildContext instead of `.of` method. 
 
 
 

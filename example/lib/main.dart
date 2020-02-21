@@ -19,14 +19,22 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Container(
-              height: 40,
-              width: 40,
-              color: context.theme.accentColor,
+            InkWell(
+              onTap: () {
+                context.navigator.push(
+                  MaterialPageRoute(builder: (_) => MyHomePage()),
+                );
+              },
+              child: Container(
+                height: context.mediaQuery.size.height * 0.15,
+                width: context.mediaQuery.size.width * 0.3,
+                color: context.theme.accentColor,
+              ),
             ),
 
             /// with extension.
