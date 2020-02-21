@@ -1,2 +1,2 @@
-## [0.0.1] - First Release
-It's included extensions for Theme & TextStyle.
+## [0.1.0] - First Release
+Bundle extensions for basic XXXX.of method which is used often.

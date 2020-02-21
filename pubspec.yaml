@@ -1,5 +1,5 @@
 name: dot_of
-description: A package of extensions to use theme data in Flutter World.
+description: A bundle of extensions to get something from BuildContext instead of `.of` method.
 version: 0.1.0
 author: Ryunosukeheaven Watanabe <heavenosk@gmail.com>
 homepage: https://github.com/HeavenOSK/dot_of

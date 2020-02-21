@@ -2,9 +2,11 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 
-/// A extensions to write copying [TextStyle] with method chaining.
+/// A extensions to write copying [TextStyle] instead of [TextStyle.of]
+/// method.
 ///
 /// # Usage
+///
 /// ```dart
 ///  Text(
 ///    'Everything is Widget',
