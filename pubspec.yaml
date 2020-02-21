@@ -1,8 +1,8 @@
-name: theme_extensions
+name: dot_of
 description: A package of extensions to use theme data in Flutter World.
-version: 0.1.1
+version: 0.1.0
 author: Ryunosukeheaven Watanabe <heavenosk@gmail.com>
-homepage: https://github.com/HeavenOSK/prextent
+homepage: https://github.com/HeavenOSK/dot_of
 
 environment:
   sdk: ">=2.6.0 <3.0.0"

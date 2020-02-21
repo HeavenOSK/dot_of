@@ -8,7 +8,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^0.1.2
-  theme_extensions:
+  dot_of:
     path:
       ../
 dev_dependencies:

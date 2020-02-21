@@ -1,5 +1,5 @@
+import 'package:dot_of/dot_of.dart';
 import 'package:flutter/material.dart';
-import 'package:theme_extensions/theme_extensions.dart';
 
 void main() => runApp(MyApp());
 
